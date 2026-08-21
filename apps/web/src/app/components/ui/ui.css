@@ -1,0 +1,19 @@
+.ui-button{min-height:38px;border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);color:var(--text-primary);padding:var(--space-2) var(--space-3);font-size:var(--font-small);font-weight:600;line-height:var(--line-small)}
+.ui-button:hover:not(:disabled){background:var(--surface-hover)}
+.ui-button.primary{background:var(--primary);border-color:var(--primary);color:var(--surface)}
+.ui-button.primary:hover:not(:disabled){background:var(--primary-hover);border-color:var(--primary-hover)}
+.ui-button.danger{background:var(--danger);border-color:var(--danger);color:var(--surface)}
+.ui-badge{display:inline-flex;align-items:center;border-radius:999px;padding:var(--space-1) var(--space-2);font-size:11px;font-weight:600;line-height:16px;background:var(--app-bg);color:var(--text-secondary)}
+.ui-badge.primary{background:var(--primary-subtle);color:var(--primary)}
+.ui-badge.success{background:var(--success-bg);color:var(--success)}
+.ui-badge.warning{background:var(--warning-bg);color:var(--warning)}
+.ui-badge.danger{background:var(--danger-bg);color:var(--danger)}
+.ui-empty{display:grid;gap:var(--space-1);place-items:center;padding:var(--space-8);border:1px dashed var(--border-strong);border-radius:var(--radius-md);color:var(--text-secondary);background:var(--surface)}
+.ui-empty strong{color:var(--text-primary)}
+.ui-skeleton{display:grid;gap:var(--space-3)}
+.ui-skeleton i{display:block;height:42px;border-radius:var(--radius-sm);background:var(--border);animation:ui-pulse 1.25s ease-in-out infinite alternate}
+@keyframes ui-pulse{to{opacity:.45}}
+.ui-dialog-backdrop{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:var(--space-5);background:var(--overlay)}
+.ui-dialog{width:min(100%,520px);max-height:calc(100vh - 40px);overflow:auto;padding:var(--space-5);border:1px solid var(--border);border-radius:var(--radius-dialog);background:var(--surface);box-shadow:var(--shadow-floating)}
+.ui-dialog header{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-4)}
+.ui-dialog h2{margin:0;font-size:var(--font-section-title);line-height:var(--line-section-title)}

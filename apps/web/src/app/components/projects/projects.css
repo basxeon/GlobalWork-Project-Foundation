@@ -1,0 +1,15 @@
+.task-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-4)}
+.task-layout.with-inspector{grid-template-columns:minmax(0,1fr) 320px}
+/* .data-panel centres itself with `margin:0 auto`, but auto inline margins on a
+   grid item absorb the free space instead of stretching, which left the table
+   shrink-wrapped in the middle of the tab. The track already sets the width. */
+.task-layout>.data-panel{margin-inline:0}
+.task-inspector{padding:var(--space-5);border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface)}.task-inspector h2{margin:0;font-size:var(--font-card-title);font-weight:600;line-height:var(--line-card-title)}.task-inspector>p{color:var(--text-secondary);font-size:var(--font-small)}
+.checklist-add{display:flex;gap:var(--space-2);margin:var(--space-4) 0}.checklist-add input,.checklist-row input:not([type=checkbox]){min-width:0;min-height:38px;flex:1;border:1px solid var(--border-strong);border-radius:8px;background:var(--surface);padding:var(--space-2) var(--space-3);color:var(--text-primary)}
+.checklist-row{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) 0;border-top:1px solid var(--border)}
+.workspace-document-tab>.workspace-backdrop,.workspace-form-tab>.formdata-backdrop{position:static;inset:auto;z-index:auto;padding:0;background:transparent;overflow:visible}
+.workspace-document-tab .workspace,.workspace-form-tab .formdata{max-width:none;margin:0;border:1px solid var(--border);border-radius:var(--radius-md);box-shadow:none}.workspace-document-tab .workspace>header,.workspace-form-tab .formdata>header{display:none}
+.document-tab-actions{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);margin-bottom:var(--space-4)}.document-tab-actions h2{margin:0;font-size:var(--font-section-title);font-weight:600;line-height:var(--line-section-title)}
+.document-upload{display:flex;align-items:center;gap:var(--space-2)}.document-upload input{font-size:var(--font-label)}.document-empty{padding:var(--space-10);border:1px dashed var(--border-strong);border-radius:var(--radius-md);background:var(--surface);text-align:center;color:var(--text-muted)}
+@media(max-width:1100px){.task-layout,.task-layout.with-inspector{grid-template-columns:1fr}.workspace-document-tab .workspace-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.document-tab-actions{display:grid}.document-upload{display:grid}.document-tab-actions>.button-row{display:grid}}

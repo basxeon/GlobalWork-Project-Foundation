@@ -1,0 +1,17 @@
+.attention{max-width:var(--content-max);margin:0 auto;padding:var(--space-5);border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface)}
+.attention h2{margin:var(--space-1) 0 0;font-size:var(--font-section-title);font-weight:600;line-height:var(--line-section-title)}
+.attention-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--space-4)}.attention-heading>span{color:var(--text-muted);font-size:var(--font-small)}
+.attention-cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--space-2);margin:var(--space-5) 0}
+.attention-card{display:grid;gap:var(--space-1);padding:var(--space-3);border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--document-bg)}
+.attention-card span{color:var(--text-secondary);font-size:var(--font-label);line-height:var(--line-label)}.attention-card strong{font-size:22px;font-weight:600;line-height:28px;letter-spacing:-.03em}
+.attention-card.expired,.attention-card.overdue{border-color:color-mix(in srgb,var(--danger) 16%,var(--border));background:var(--danger-bg);color:var(--danger)}
+.attention-card.urgent{border-color:color-mix(in srgb,var(--warning) 16%,var(--border));background:var(--warning-bg);color:var(--warning)}
+.attention-card.upcoming,.attention-card.soon{border-color:color-mix(in srgb,var(--info) 14%,var(--border));background:var(--info-bg);color:var(--info)}
+.attention-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-2) var(--space-6)}
+.attention-groups article{padding-top:var(--space-3);border-top:1px solid var(--border)}.attention-groups h3{margin:0 0 var(--space-2);color:var(--text-secondary);font-size:var(--font-card-title);font-weight:600;line-height:var(--line-card-title)}
+.attention-list{margin:0;padding:0;list-style:none}.attention-list li{display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);padding:var(--space-2) 0;border-top:1px solid var(--border)}.attention-list li:first-child{border-top:0}
+.attention-list button{min-width:0!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;text-align:left!important}.attention-list button b{display:block;overflow:hidden;color:var(--text-primary);font-size:var(--font-small);font-weight:600;text-overflow:ellipsis;white-space:nowrap}.attention-list button:hover b{color:var(--primary)}.attention-list button span{display:block;margin-top:var(--space-1);color:var(--text-muted);font-size:var(--font-label)}
+.attention-status{flex:none;border-radius:999px;padding:var(--space-1) var(--space-2);font-size:11px;font-style:normal;font-weight:600;line-height:16px}.attention-status.expired,.attention-status.overdue{background:var(--danger-bg);color:var(--danger)}.attention-status.urgent{background:var(--warning-bg);color:var(--warning)}.attention-status.upcoming,.attention-status.due_soon{background:var(--info-bg);color:var(--info)}
+.attention-empty{margin:var(--space-2) 0;color:var(--text-muted);font-size:var(--font-small)}
+@media(max-width:1100px){.attention-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.attention-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.attention-groups{grid-template-columns:1fr}.attention-heading{display:block}.attention-heading>span{display:block;margin-top:var(--space-1)}}

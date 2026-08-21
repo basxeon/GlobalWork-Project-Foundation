@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+
+  /* Surface hierarchy */
+  --app-bg: #f5f5f4;
+  --document-bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --surface-hover: #f5f5f4;
+
+  /* Typography */
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #78716c;
+  --text-placeholder: #a8a29e;
+
+  /* Borders */
+  --border: #e7e5e4;
+  --border-strong: #d6d3d1;
+
+  /* Product accent */
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-subtle: #eef2ff;
+
+  /* Semantic colors */
+  --success: #15803d;
+  --success-bg: #f0fdf4;
+  --warning: #b45309;
+  --warning-bg: #fffbeb;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --info: #1d4ed8;
+  --info-bg: #eff6ff;
+  --focus-ring: rgba(79, 70, 229, 0.28);
+  --overlay: rgba(28, 25, 23, 0.42);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Shape and elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-dialog: 16px;
+  --shadow-subtle: 0 1px 2px rgba(28, 25, 23, 0.05);
+  --shadow-floating: 0 8px 30px rgba(28, 25, 23, 0.09);
+
+  /* Type scale */
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-page-title: 28px;
+  --line-page-title: 34px;
+  --font-section-title: 18px;
+  --line-section-title: 26px;
+  --font-card-title: 15px;
+  --line-card-title: 22px;
+  --font-body-size: 14px;
+  --line-body: 22px;
+  --font-small: 13px;
+  --line-small: 18px;
+  --font-label: 12px;
+  --line-label: 16px;
+
+  /* Motion and layout */
+  --transition-fast: 140ms ease;
+  --sidebar-width: 232px;
+  --content-max: 1520px;
+
+  /* Compatibility aliases for established feature workspaces. */
+  --bg: var(--app-bg);
+  --line: var(--border);
+  --canvas: var(--app-bg);
+  --paper: var(--surface);
+  --ink: var(--text-primary);
+  --muted: var(--text-muted);
+  --blue: var(--primary);
+}
